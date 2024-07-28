@@ -17,6 +17,7 @@
     "@nuxtjs/sitemap": "^5.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "emailjs-com": "^3.2.0",
     "lucide-vue-next": "^0.379.0",
     "nuxt": "^3.11.2",
     "nuxt-gtag": "^2.0.6",

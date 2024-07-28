@@ -24,7 +24,7 @@
             </span>
           </div>
           <div class="text-sm text-primary-950/60 text-pretty">
-            <b class="mr-1">{{ productsSold }}</b> happy developers
+            <b class="mr-1">{{ productsSold }}</b>
           </div>
           <div class="flex">
             <Icon v-for="(star, index) in stars" :key="index" :icon="star" class="size-4 text-primary" />
@@ -56,11 +56,11 @@ const props = defineProps({
   },
   heading: {
     type: String,
-    default: 'Launch in minutes with Nuxt 3 and Shadcn',
+    default: 'Portfolio 2024',
   },
   text: {
     type: String,
-    default: 'Finally a landing page for Nuxt 3 featuring beautifully crafted Shadcn components. Save a full weekend and launch your next product.',
+    default: 'Jacob Zarn',
   },
   textClass: {
     type: String,
@@ -72,7 +72,7 @@ const props = defineProps({
   },
   primaryButtonText: {
     type: String,
-    default: 'Get this template',
+    default: 'Download CV',
   },
   primaryButtonIcon: {
     type: String,
@@ -85,31 +85,6 @@ const props = defineProps({
   secondaryButtonText: {
     type: String,
     default: 'Learn more',
-  },
-  customerImages: {
-    type: Array,
-    default: () => [
-      'https://i.pravatar.cc/150?img=1',
-      'https://i.pravatar.cc/150?img=2',
-      'https://i.pravatar.cc/150?img=3',
-      'https://i.pravatar.cc/150?img=4',
-      'https://i.pravatar.cc/150?img=5',
-      'https://i.pravatar.cc/150?img=6'
-    ],
-  },
-  productsSold: {
-    type: Number,
-    default: 2981,
-  },
-  stars: {
-    type: Array,
-    default: () => [
-      'radix-icons:star-filled',
-      'radix-icons:star-filled',
-      'radix-icons:star-filled',
-      'radix-icons:star-filled',
-      'radix-icons:star',
-    ],
   },
   imageSrc: {
     type: String,

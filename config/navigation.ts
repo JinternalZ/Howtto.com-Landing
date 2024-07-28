@@ -10,7 +10,7 @@ export const navigationItems: { title: string, href: string }[] = [
         href: '#pricing',
     },
     {
-        title: 'Testimonials',
+        title: 'Projects',
         href: '#testimonials',
     },
     {

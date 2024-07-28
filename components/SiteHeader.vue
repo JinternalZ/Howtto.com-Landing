@@ -44,19 +44,19 @@ const props = defineProps({
   },
   signInLink: {
     type: String,
-    default: '/',
+    default: '/message-form',
   },
   signUpLink: {
     type: String,
-    default: '/',
+    default: '/email-form',
   },
   signInText: {
     type: String,
-    default: 'Sign In',
+    default: 'Message',
   },
   signUpText: {
     type: String,
-    default: 'Sign Up',
+    default: 'Email',
   },
 });
 </script>
