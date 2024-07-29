@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Hero from '@/components/sections/Hero.vue'
-import FeaturedOn from '@/components/sections/FeaturedOn.vue'
 import Problems from '@/components/sections/Problems.vue'
 import Features from '@/components/sections/Features.vue'
 import FeaturesTwo from '~/components/sections/FeaturesAlt.vue'
@@ -13,10 +12,8 @@ import FAQ from "@/components/sections/FAQ.vue";
 <template>
   <Hero />
   <FeaturedOn />
-  <Problems />
-  <Features />
   <FeaturesTwo />
-  <Pricing />
+  <Features />
   <FAQ />
   <Testimonials />
   <CallToAction />

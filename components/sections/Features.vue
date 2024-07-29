@@ -12,7 +12,10 @@
           <div v-for="(feature, index) in featureItems" :key="index" class="relative pl-8">
             <dt class="font-semibold text-gray-900 dark:text-white">
               <Icon :icon="feature.icon" class="absolute left-0 top-1 size-5 text-primary" />
-              <span>{{ feature.title }}</span>
+              <span v-if="feature.title === 'Twin Cities Pain Clinic'">
+                <NuxtLink :to="{ path: '/TCPC' }">{{ feature.title }}</NuxtLink>
+              </span>
+              <span v-else>{{ feature.title }}</span>
             </dt>
             <dd class="leading-6 text-muted-foreground">
               {{ feature.description }}
@@ -42,7 +45,7 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: "Fully featured & ready"
+    default: "Fully featured & ready."
   },
   description: {
     type: String,
@@ -52,25 +55,30 @@ const props = defineProps({
     type: Array,
     default: () => [
       {
-        icon: "radix-icons:magic-wand",
-        title: "Clone, configure, deploy",
-        description: "Vercel support integrated, just a few clicks and you are ready to go!"
+        icon: "radix-icons:moon",
+        title: "Twin Cities Pain Clinic",
+        description: "Marketing Assistant - 1/1/24-8/1/24"
       },
       {
-        icon: "radix-icons:ruler-square",
-        title: "Customization built-in",
-        description: "Easily change the color and text variables, or customize yourself."
+        icon: "radix-icons:moon",
+        title: "Fun.com Brands",
+        description: "eCommerce Specialist - 7/1/23-1/1/24"
       },
       {
-        icon: "radix-icons:lightning-bolt",
-        title: "Spend time building your product",
-        description: "All the set-up work is already taken care of. Get right to building!"
+        icon: "radix-icons:moon",
+        title: "IEM at UMN",
+        description: "Marketing Management Intern - 7/1/22-7/1/23"
+      },
+      {
+        icon: "radix-icons:moon",
+        title: "Personal Projects",
+        description: "2019-2024"
       }
     ]
   },
   imageSrc: {
     type: String,
-    default: "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    default: "images/Marketing.png"
   },
   imageAlt: {
     type: String,

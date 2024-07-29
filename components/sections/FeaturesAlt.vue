@@ -1,9 +1,9 @@
 <template>
   <section :id="sectionId" data-aos="fade-up" class="container py-8 md:py-12 lg:py-24">
     <div class="mx-auto grid max-w-7xl gap-16 px-4 sm:gap-y-24 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
-      <div class="aspect-w-16 aspect-h-9 relative rounded-xl border">
+      <div class="relative rounded-xl border overflow-hidden">
         <NuxtImg
-            class="rounded-xl"
+            class="rounded-xl object-cover w-full h-full"
             :src="imageSrc"
             :alt="imageAlt"/>
       </div>
@@ -46,36 +46,36 @@ const props = defineProps({
   },
   description: {
     type: String,
-    default: "Enjoy the productivity and simplicity of Nuxt/Vue with UI components that were previously only available for React developers."
+    default: "My goal is to use cutting edge tools to help grow your business online and create a trustworthy local presence."
   },
   featureItems: {
     type: Array,
     default: () => [
       {
         icon: "radix-icons:moon",
-        title: "Shadcn UI components",
-        description: "Beautifully designed components for your apps."
+        title: "SEO Analytics",
+        description: "SEMRush, MOZ, and Google Analytics."
       },
       {
         icon: "radix-icons:moon",
-        title: "TypeScript support",
-        description: "Types implemented within the Vue components."
+        title: "Local Marketing",
+        description: "Local SEO, Google My Business, and Yelp."
       },
       {
         icon: "radix-icons:moon",
-        title: "SEO & Analytics built-in",
-        description: "Google Analytics, Vercel analytics and SEO tools."
+        title: "Ad Campaigns",
+        description: "Affiliate marketing, TV/Radio Ads, Google Ads, and Facebook Ads."
       },
       {
         icon: "radix-icons:moon",
-        title: "Dark-mode & animations",
-        description: "Nice-to-haves taken into account, quality baked-in."
+        title: "In-Person Marketing",
+        description: "Business Development, Referral Programs, and Networking."
       }
     ]
   },
   imageSrc: {
     type: String,
-    default: "images/filestructure.png"
+    default: "images/Tools.png"
   },
   imageAlt: {
     type: String,
