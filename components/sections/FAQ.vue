@@ -32,11 +32,11 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: 'Frequently Asked Questions'
+    default: 'FAQ'
   },
   description: {
     type: String,
-    default: 'Discover answers to common queries about our this template.'
+    default: 'Here are my answers'
   },
   defaultValue: {
     type: String,
@@ -45,9 +45,9 @@ const props = defineProps({
   accordionItems: {
     type: Array,
     default: () => [
-      { value: 'item-1', title: 'Is it compatible with Nuxt 3?', content: 'Yes, our components are fully compatible with Nuxt 3.' },
-      { value: 'item-2', title: 'Do you provide support?', content: 'Absolutely! Our dedicated support team is ready to assist you.' },
-      { value: 'item-3', title: 'Can I customize the components?', content: 'Of course! Our components are highly customizable to suit your needs.' }
+      { value: 'item-1', title: 'How many years of experience?', content: 'I have two strong professional years of marketing experience, not including the time spent on personal projects.' },
+      { value: 'item-2', title: 'When are you able to work?', content: 'As soon as possible!' },
+      { value: 'item-3', title: 'How is this website created?', content: 'I am proficient in JavaScript, Vue and Nuxt web development languages.' }
     ]
   }
 });

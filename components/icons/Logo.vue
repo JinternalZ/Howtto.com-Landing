@@ -3,5 +3,5 @@ import {Icon} from "@iconify/vue";
 </script>
 
 <template>
-  <Icon icon="radix-icons:rocket" class="size-6 text-indigo-500" />
+  <Icon icon="radix-icons:face" class="size-6 text-indigo-500" />
 </template>

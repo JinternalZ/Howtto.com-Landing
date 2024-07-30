@@ -15,6 +15,4 @@ import FAQ from "@/components/sections/FAQ.vue";
   <FeaturesTwo />
   <Features />
   <FAQ />
-  <Testimonials />
-  <CallToAction />
 </template>

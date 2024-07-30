@@ -2,16 +2,8 @@ import {siteConfig} from "~/config/site";
 
 export const navigationItems: { title: string, href: string }[] = [
     {
-        title: 'Features',
+        title: 'Experience',
         href: '#features',
-    },
-    {
-        title: 'Pricing',
-        href: '#pricing',
-    },
-    {
-        title: 'Projects',
-        href: '#testimonials',
     },
     {
         title: 'FAQ',

@@ -62,7 +62,7 @@ const props = defineProps({
   },
   text: {
     type: String,
-    default: 'Jacob Zarn - website coded from scratch',
+    default: 'Jacob Zarn - Marketing/Admin Specialist',
   },
   textClass: {
     type: String,
@@ -86,7 +86,7 @@ const props = defineProps({
   },
   secondaryButtonText: {
     type: String,
-    default: 'Learn more',
+    default: 'Site Coded From Scratch',
   },
   imageSrc: {
     type: String,
