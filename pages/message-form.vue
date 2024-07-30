@@ -21,6 +21,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import axios from 'axios';
 
 const form = ref({
     name: '',
@@ -28,9 +29,13 @@ const form = ref({
     message: ''
 });
 
-const submitForm = () => {
-    // Handle form submission
-    console.log('Form submitted:', form.value);
+const submitForm = async () => {
+    try {
+        const response = await axios.post('/api/send-message', form.value);
+        console.log('Message sent:', response.data);
+    } catch (error) {
+        console.error('Error sending message:', error);
+    }
 };
 </script>
 

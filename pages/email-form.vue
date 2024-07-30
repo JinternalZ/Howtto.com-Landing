@@ -3,7 +3,7 @@
     <h1>Send an Email</h1>
     <form @submit.prevent="submitForm">
       <div>
-        <label for="message">Please include return contact:</label>
+        <label for="message">Please include your contact info:</label>
         <textarea id="message" v-model="form.message" required></textarea>
       </div>
       <button type="submit">Send</button>

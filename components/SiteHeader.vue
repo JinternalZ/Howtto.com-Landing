@@ -10,11 +10,6 @@
       <MainNav />
       <div class="flex items-center space-x-2">
         <ModeToggle />
-        <NuxtLink :to="signInLink">
-          <div :class="buttonVariants({ variant: 'ghost' })">
-            {{ signInText }}
-          </div>
-        </NuxtLink>
         <NuxtLink :to="signUpLink">
           <div :class="buttonVariants({ variant: 'default' })">
             {{ signUpText }}
@@ -42,21 +37,13 @@ const props = defineProps({
     type: String,
     default: '/',
   },
-  signInLink: {
-    type: String,
-    default: '/message-form',
-  },
   signUpLink: {
     type: String,
     default: '/email-form',
   },
-  signInText: {
-    type: String,
-    default: 'Message',
-  },
   signUpText: {
     type: String,
-    default: 'Email',
+    default: 'Email Me',
   },
 });
 </script>
