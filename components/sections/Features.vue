@@ -12,9 +12,8 @@
           <div v-for="(feature, index) in featureItems" :key="index" class="relative pl-8">
             <dt class="font-semibold text-gray-900 dark:text-white">
               <Icon :icon="feature.icon" class="absolute left-0 top-1 size-5 text-primary" />
-              <span v-if="feature.title === 'Twin Cities Pain Clinic'">
-                <NuxtLink :to="{ path: '/TCPC' }">{{ feature.title }}</NuxtLink>
-              </span>
+              <NuxtLink v-if="feature.title === 'Twin Cities Pain Clinic'" :to="{ path: '/TCPC' }">{{ feature.title }}</NuxtLink>
+              <NuxtLink v-else-if="feature.title === 'Fun.com Brands'" :to="{ path: '/fun' }">{{ feature.title }}</NuxtLink>
               <span v-else>{{ feature.title }}</span>
             </dt>
             <dd class="leading-6 text-muted-foreground">
@@ -24,9 +23,9 @@
         </dl>
       </div>
       <div class="rounded-xl p-4 lg:-m-4">
-        <div class="aspect-w-16 aspect-h-9 relative rounded-xl border">
+        <div class="relative rounded-xl border aspect-ratio-box">
           <NuxtImg
-              class="rounded-xl"
+              class="rounded-xl aspect-ratio-content"
               :src="imageSrc"
               :alt="imageAlt" />
         </div>
@@ -45,27 +44,27 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: "Fully featured & ready."
+    default: "My Experiences"
   },
   description: {
     type: String,
-    default: ""
+    default: "Since graduation, I have consistently worked in marketing for two whole years, including one internship and two temp jobs. Click on one below to learn more about them."
   },
   featureItems: {
     type: Array,
     default: () => [
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:card-stack-plus",
         title: "Twin Cities Pain Clinic",
         description: "Marketing Assistant - 1/1/24-8/1/24"
       },
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:face",
         title: "Fun.com Brands",
         description: "eCommerce Specialist - 7/1/23-1/1/24"
       },
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:backpack",
         title: "IEM at UMN",
         description: "Marketing Management Intern - 7/1/22-7/1/23"
       },
@@ -86,3 +85,20 @@ const props = defineProps({
   }
 });
 </script>
+
+<style scoped>
+.aspect-ratio-box {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.aspect-ratio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>

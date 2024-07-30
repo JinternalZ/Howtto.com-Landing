@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import {siteConfig} from "~/config/site";
+import { siteConfig } from "~/config/site";
+import MouseTrail from '/workspaces/Howtto.com-Landing/components/sections/MouseTrail.vue';
 
 useSeoMeta({
   title: siteConfig.name,
   description: siteConfig.description,
   twitterCard: 'summary_large_image',
-})
+});
 </script>
 
 <template>
@@ -16,4 +17,6 @@ useSeoMeta({
   </main>
 
   <SiteFooter />
+
+  <MouseTrail />
 </template>

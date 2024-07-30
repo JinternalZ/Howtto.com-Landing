@@ -52,22 +52,22 @@ const props = defineProps({
     type: Array,
     default: () => [
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:magnifying-glass",
         title: "SEO Analytics",
         description: "SEMRush, MOZ, and Google Analytics."
       },
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:crosshair-1",
         title: "Local Marketing",
         description: "Local SEO, Google My Business, and Yelp."
       },
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:mobile",
         title: "Ad Campaigns",
         description: "Affiliate marketing, TV/Radio Ads, Google Ads, and Facebook Ads."
       },
       {
-        icon: "radix-icons:moon",
+        icon: "radix-icons:face",
         title: "In-Person Marketing",
         description: "Business Development, Referral Programs, and Networking."
       }

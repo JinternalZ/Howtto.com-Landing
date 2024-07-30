@@ -29,6 +29,14 @@
                     :alt="additionalImageAlt" />
                 </a>
               </div>
+              <div v-if="feature.title === 'Affiliate Marketing'" class="mt-4">
+                <a :href="instagramLink" target="_blank" rel="noopener noreferrer">
+                  <NuxtImg
+                    class="rounded-xl"
+                    :src="newImageSrc"
+                    :alt="newImageAlt" />
+                </a>
+              </div>
             </div>
           </dl>
         </div>
@@ -43,8 +51,8 @@
           <div class="aspect-w-16 aspect-h-9 relative rounded-xl border mt-96">
             <NuxtImg
               class="rounded-xl"
-              :src="newImageSrc"
-              :alt="newImageAlt" />
+              :src="additionalNewImageSrc"
+              :alt="additionalNewImageAlt" />
           </div>
         </div>
       </div>
@@ -61,40 +69,40 @@
     },
     title: {
       type: String,
-      default: "Twin Cities Pain Clinic"
+      default: "Fun Brands"
     },
     description: {
       type: String,
-      default: "TCPC runs a large chain of seven pain clinics and three surgery centers in the Twin Cities, helping people with their pain without the need of strong medications."
+      default: "Chances are, if you have bought a Halloween costume in the last twenty years, it was from HalloweenCostumes.com"
     },
     featureItems: {
       type: Array,
       default: () => [
         {
-          icon: "radix-icons:envelope-open",
-          title: "Referral Marketing",
-          description: "Planning routes and executing strategies to increase referrals from outside medical practices. I successfully received patient referrals from ten new medical practices in the first quarter of 2024. Besides physically driving to the locations, I also planned and executed a long-term mail marketing campaign using tracking numbers to analyze referrals."
-        },
-        {
-          icon: "radix-icons:ruler-square",
-          title: "Advertising Campaigns",
-          description: "In the first two quarters of 2024 I successfully executed $10,000 of social media ads on Google, Facebook and Linkedin. I was also one of two people responsible for a $100,000 television advertising campaign, including content creation and ad execution."
-        },
-        {
           icon: "radix-icons:desktop",
           title: "Website Management",
-          description: "I helped code the WordPress website to include new features and improve the user experience. I also helped write copy for many blog articles, all of which rank highly on Google. Click to see an example of my copywriting."
+          description: "I was tasked with countless ad-hoc projects, including the SEO of products, fixing broken pages, and developing strategies to rank our products higher on all search engines. I worked on all of their websites for every country, including the Mexico site where I used my Spanish skills to perfect product pages."
+        },
+        {
+          icon: "radix-icons:face",
+          title: "CRM Marketing",
+          description: "The marketing and webex team worked closely, and I helped develop changes to the CRM system to improve the user experience. I helped create content and landing page changes in order to promote sales and exclusive deals, in order to increase conversions."
         },
         {
           icon: "radix-icons:person",
-          title: "CRM Marketing",
-          description: "I helped manage the CRM system, including creating and sending email campaigns, tracking open rates and click-through rates, and analyzing data to improve future campaigns. I also helped increase and perfect the very important Google Business Profile reviews, increasing each location's ratings by an average of five percent month over month."
+          title: "Affiliate Marketing",
+          description: "Fun Brands has a huge online presence, and I helped manage influencers on Instagram who post pictures of our products. These were known as lifestyle images and I would reach out to the influencer in order to get permission to link their image to our site. These conversion rates were extremely high, normally between twenty and thirty percent."
+        },
+        {
+          icon: "radix-icons:rocket",
+          title: "Halloween.com Launch",
+          description: "Since I worked there during their busiest season, I was able to help launch their new venture, Halloween.com. I primarily helped create strategies for creating content, managing website issues, and creating exceptional copy for hundreds of products. Halloween.com reached a massive amount of people at launch, reaching into 600,000 views per month."
         }
       ]
     },
     imageSrc: {
       type: String,
-      default: "images/googletcpc.png"
+      default: "images/CRMFun.png"
     },
     imageAlt: {
       type: String,
@@ -102,7 +110,7 @@
     },
     additionalImageSrc: {
       type: String,
-      default: "images/Blogblurb.png"
+      default: "images/FunLogos.png"
     },
     additionalImageAlt: {
       type: String,
@@ -110,15 +118,27 @@
     },
     additionalImageLink: {
       type: String,
-      default: "https://twincitiespainclinic.com/7-tips-to-prevent-back-pain-on-the-golf-course/"
+      default: "https://www.fun.com/"
     },
     newImageSrc: {
       type: String,
-      default: "images/QR.png"
+      default: "images/AffiliateFun.png"
     },
     newImageAlt: {
       type: String,
       default: "New Image"
+    },
+    additionalNewImageSrc: {
+      type: String,
+      default: "images/Halloween.png"
+    },
+    additionalNewImageAlt: {
+      type: String,
+      default: "Additional New Image"
+    },
+    instagramLink: {
+      type: String,
+      default: "https://www.instagram.com/fundotcom_/?hl=en"
     }
   });
   </script>

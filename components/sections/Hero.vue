@@ -9,14 +9,15 @@
           {{ text }}
         </p>
         <div class="mt-6 flex justify-center space-x-2 md:space-x-4">
-          <NuxtLink :to="primaryButtonLink" :class="cn(buttonVariants({ size: 'lg' }))">
+          <a :href="resumeLink" download :class="cn(buttonVariants({ size: 'lg' }))">
             {{ primaryButtonText }}
             <Icon :icon="primaryButtonIcon" class="ml-2 size-4" />
-          </NuxtLink>
+          </a>
           <NuxtLink :to="secondaryButtonLink" :class="cn(buttonVariants({ variant: 'outline', size: 'lg' }))">
             {{ secondaryButtonText }}
           </NuxtLink>
         </div>
+        <div id="lottie-animation" class="mt-4 w-full h-96"></div>
         <div class="flex flex-col items-center gap-2 md:flex-row md:gap-4 mt-4">
           <div class="inline-flex flex-row-reverse justify-end">
             <span v-for="(customer, index) in customerImages" :key="index" :class="['relative inline-flex items-center justify-center flex-shrink-0 rounded-full h-8 w-8 text-sm ring-2 ring-white dark:ring-gray-900 -me-1.5 first:me-0']">
@@ -44,6 +45,7 @@
 import { cn } from '~/lib/utils';
 import { buttonVariants } from '~/components/ui/button';
 import { Icon } from '@iconify/vue';
+import lottie from 'lottie-web';
 
 const props = defineProps({
   sectionClass: {
@@ -56,11 +58,11 @@ const props = defineProps({
   },
   heading: {
     type: String,
-    default: 'Portfolio 2024',
+    default: 'My Portfolio 2024',
   },
   text: {
     type: String,
-    default: 'Jacob Zarn',
+    default: 'Jacob Zarn - website coded from scratch',
   },
   textClass: {
     type: String,
@@ -90,5 +92,23 @@ const props = defineProps({
     type: String,
     default: 'images/hero.png',
   },
+  resumeLink: {
+    type: String,
+    default: 'images/Resume.pdf', // Update this path to your actual PDF file
+  },
+  lottieAnimationPath: {
+    type: String,
+    default: 'images/Singing-contract.json', // Update this path to your actual Lottie JSON file
+  },
+});
+
+onMounted(() => {
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: props.lottieAnimationPath,
+  });
 });
 </script>
