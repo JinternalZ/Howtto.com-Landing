@@ -33,7 +33,7 @@
           </dl>
         </div>
         <div class="rounded-xl p-4 lg:-m-4">
-          <div class="aspect-w-16 aspect-h-9 relative rounded-xl border">
+          <div class="aspect-w-16 aspect-h-9 relative rounded-xl border mt-96">
             <NuxtImg
               class="rounded-xl"
               :src="imageSrc"
