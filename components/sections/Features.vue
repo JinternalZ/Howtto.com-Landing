@@ -14,6 +14,7 @@
               <Icon :icon="feature.icon" class="absolute left-0 top-1 size-5 text-primary" />
               <NuxtLink v-if="feature.title === 'Twin Cities Pain Clinic'" :to="{ path: '/TCPC' }">{{ feature.title }}</NuxtLink>
               <NuxtLink v-else-if="feature.title === 'Fun.com Brands'" :to="{ path: '/fun' }">{{ feature.title }}</NuxtLink>
+              <NuxtLink v-else-if="feature.title === 'IEM at UMN'" :to="{ path: '/IEM' }">{{ feature.title }}</NuxtLink>
               <span v-else>{{ feature.title }}</span>
             </dt>
             <dd class="leading-6 text-muted-foreground">
