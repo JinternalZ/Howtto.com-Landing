@@ -38,5 +38,8 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: 'G-XXXXXXXXXX'
+  },
+  site: {
+    url: 'https://www.jakezarn.com'
   }
 })
