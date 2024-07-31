@@ -38,15 +38,7 @@
     <div class="border-t">
       <div class="container flex flex-col items-center justify-between gap-4 py-6 md:flex-row">
         <p class="text-balance text-center text-sm leading-loose text-muted-foreground md:text-left">
-          Built with love in Nuxt 3 with{{ " " }}
-          <a
-              href="https://www.shadcn-vue.com"
-              target="_blank"
-              rel="noreferrer"
-              class="font-medium underline underline-offset-4"
-          >
-            Shadcn UI
-          </a>.
+          Built with love using Nuxt 3
         </p>
       </div>
     </div>
