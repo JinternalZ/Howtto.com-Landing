@@ -82,7 +82,7 @@ const props = defineProps({
   },
   secondaryButtonLink: {
     type: String,
-    default: '#features',
+    default: '#faq',
   },
   secondaryButtonText: {
     type: String,

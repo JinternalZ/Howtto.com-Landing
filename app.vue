@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { siteConfig } from "~/config/site";
-import MouseTrail from '/workspaces/Howtto.com-Landing/components/sections/MouseTrail.vue';
+import MouseTrail from '~/components/sections/MouseTrail.vue';
 
 useSeoMeta({
   title: siteConfig.name,

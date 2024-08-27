@@ -33,10 +33,13 @@ export default defineNuxtConfig({
     apiSecret: '123',
     // Keys within public, will be also exposed to the client-side
     public: {
-      siteUrl: 'http://localhost:3000'
+      siteUrl: 'https://www.jakezarn.com'
     }
   },
   gtag: {
     id: 'G-XXXXXXXXXX'
+  },
+  site: {
+    url: 'https://www.jakezarn.com'
   }
 })
